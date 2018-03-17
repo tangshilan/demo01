@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the SettingPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { RegisterPage } from '../register/register';
+import { LoginPage } from '../login/login';
+
 
 @IonicPage()
 @Component({
@@ -20,6 +17,12 @@ export class SettingPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SettingPage');
+  }
+  goback() {
+    this.navCtrl.push(LoginPage);
+  }
+  register() {
+    this.navCtrl.push(RegisterPage);
   }
 
 }

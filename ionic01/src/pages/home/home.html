@@ -4,7 +4,8 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding id="home">
+  <!--  <ion-searchbar [(ngModel)]="searchQuery" (input)="getItems($event)"></ion-searchbar>-->
   <ion-slides (ionSlideDidChange)="slideChanged()" autoplay="2000"  loop="true" class="silde" pager="true">
     <ion-slide>
       <img src="../../assets/imgs/shu01.jpg">
@@ -13,12 +14,215 @@
       <img src="../../assets/imgs/shu02.jpg">
     </ion-slide>
     <ion-slide>
-      <img src="../../assets/imgs/home-headerSlide-4.jpg">
+      <img src="../../assets/imgs/shu02.jpg">
     </ion-slide>
     <ion-slide>
-      <img src="../../assets/imgs/home-headerSlide-5.jpg">
+      <img src="../../assets/imgs/shu02.jpg">
     </ion-slide>
   </ion-slides>
-<br/>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+      <br>
+      <span>蓝色裙子</span>
+    </ion-col>
+    <ion-col>
+      <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+    <br>
+    <span>蓝色裙子</span>
+    </ion-col>
+    <ion-col>
+      <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+      <br>
+      <span>蓝色裙子</span>
+    </ion-col>
+    <ion-col>
+      <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+      <br>
+      <span>蓝色裙子</span>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+    <br>
+    <span>蓝色裙子</span>
+    </ion-col>
+    <ion-col>
+      <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+      <br>
+      <span>蓝色裙子</span>
+    </ion-col>
+    <ion-col>
+      <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+    <br>
+    <span>蓝色裙子</span>
+    </ion-col>
+    <ion-col>
+    <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+    <br>
+    <span>蓝色裙子</span>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+    <!-- 秒杀 -->
+    <div id="centent">
+      <div class="centent-top">
+        <span></span>
+        <h2>掌上秒杀</h2>
+        <div class="centent-time">
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+          <span>:</span>
+          <span class="time-text">0</span>
+          <span class="time-text">0</span>
+        </div>
+        <div class="centent-more">
+          更多>
+        </div>
+      </div>
+
+      <div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+              <br>
+              <span class="seckill-now">￥11.11</span>
+              <span class="seckill-old">￥39.00</span>
+            </ion-col>
+            <ion-col>
+              <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+              <br>
+              <span class="seckill-now">￥11.11</span>
+              <span class="seckill-old">￥39.00</span>
+            </ion-col>
+            <ion-col>
+              <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+              <br>
+              <span class="seckill-now">￥11.11</span>
+              <span class="seckill-old">￥39.00</span>
+            </ion-col>
+            <ion-col>
+              <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+              <br>
+              <span class="seckill-now">￥11.11</span>
+              <span class="seckill-old">￥39.00</span>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </div>
+    </div>
+    <!-- 中间幻灯片-->
+    <div>
+        <ion-slides (ionSlideDidChange)="slideChanged()" autoplay="2000"  loop="true" class="silde" pager="true">
+            <ion-slide>
+              <img src="../../assets/imgs/home-ad-1.jpg">
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/imgs/home-ad-2.jpg">
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/imgs/home-ad-5.jpg">
+            </ion-slide>
+            <ion-slide>
+              <img src="../../assets/imgs/home-ad-6.jpg">
+            </ion-slide>
+          </ion-slides>
+    </div>
+    <!--精选 -->
+
+    <!--主题街-->
+    <div class="floor">
+        <div class="floor-title">主题街</div>
+        <div class="floor-product">
+            <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+                    <br>
+                    <span>蓝色裙子</span>
+                  </ion-col>
+                  <ion-col>
+                    <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+                  <br>
+                  <span>蓝色裙子</span>
+                  </ion-col>
+                  <ion-col>
+                    <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+                    <br>
+                    <span>蓝色裙子</span>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col>
+                    <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+                    <br>
+                    <span>蓝色裙子</span>
+                  </ion-col>
+                  <ion-col>
+                    <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+                  <br>
+                  <span>蓝色裙子</span>
+                  </ion-col>
+                  <ion-col>
+                  <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+                  <br>
+                  <span>蓝色裙子</span>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+        </div>
+      </div>
+
+
+    <div>
+        <div class="floor-title">精选</div>
+        <ion-grid>
+            <ion-row>
+              <ion-col>
+                <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+                <br>
+                <span>蓝色裙子</span>
+              </ion-col>
+              <ion-col>
+                <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+              <br>
+              <span>蓝色裙子</span>
+              </ion-col>
+              <ion-col>
+                <span><img src="../../assets/imgs/cl01.jpg" class="img"></span>
+                <br>
+                <span>蓝色裙子</span>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+                <br>
+                <span>蓝色裙子</span>
+              </ion-col>
+              <ion-col>
+                <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+              <br>
+              <span>蓝色裙子</span>
+              </ion-col>
+              <ion-col>
+              <span><img src="../../assets/imgs/cl02.jpg" class="img"></span>
+              <br>
+              <span>蓝色裙子</span>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+
+    </div>
 
 </ion-content>

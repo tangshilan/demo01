@@ -11,6 +11,8 @@ import { CartPage } from '../pages/cart/cart';
 import { GoodsPage } from '../pages/goods/goods';
 import { ListPage } from '../pages/list/list';
 import { SettingPage } from '../pages/setting/setting';
+import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -25,12 +27,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CartPage,
     GoodsPage,
     ListPage,
-    SettingPage
+    SettingPage,
+    LoginPage,
+    RegisterPage
 
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,7 +46,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CartPage,
     GoodsPage,
     ListPage,
-    SettingPage
+    SettingPage,
+    LoginPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,
