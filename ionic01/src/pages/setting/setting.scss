@@ -1,3 +1,85 @@
 page-setting {
+    .set_page{
+        background: rgb(223, 224, 226);
+    }
+    .set_card{
+        width: 100%;
+        height: 150px;
+        padding: 35px 5px 15px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        background-image: url('../assets/imgs/beijing02.jpg'); 
 
+    }
+    .set_card01{
+        width: 100%;
+        padding: 0px 20px 0px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .name_01{
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    .set_card02{
+        width: 100%;
+      /*  border: 1px blue solid;*/
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .set_item01{
+        background: white;
+        padding: 10px 5px 15px 5px;
+    }
+    .icon01{
+        padding-left: 10px;
+    }
+    
+    .cent{
+        background: rgb(250, 250, 250);
+    }
+    .title{
+        font-size:15px;
+        padding-top:8px;
+        padding-left:7px;
+        padding-bottom:5px;
+    }
+    .title:before{
+        display:inline-block;
+        content:'';
+        width:3px;
+        height:12px;
+        background-color:#d8505c;
+        margin:1px 7px 0 0;
+      }
+      .set_list{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+      /*  border: 1px blue solid;*/
+      }
+
+      .set_list_lab{
+          
+        width: 100%;
+         /* border: 1px blue solid;*/
+          display: flex;
+          flex-direction:row;
+          justify-content:flex-start;
+          align-items: center;
+          font-size: 5px;
+          padding-left: 10px;
+          /*border: 1px rgb(173, 69, 100) solid;*/
+      }
 }
